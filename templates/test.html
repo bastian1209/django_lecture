@@ -1,0 +1,15 @@
+<h1> 단어 시험지 </h1>
+<form action="" type="post">
+    <h2>이름 : {{name}}</h2>
+    <h2>{{step}}번째 문제</h2>
+    <h3>뜻 : {{ meaning }}</h3>
+
+    <input type="text" name="answer" value="">
+    <input type="hidden" name="name" value="{{ name }}">
+    <form action="test/">
+        <input type="submit" value="제출">
+        <input type="hidden" name="answer_list" value="{{ answer_list }}">
+        <input type="hidden" name='step' value="{{ step }}">
+    </form>
+
+</form>
